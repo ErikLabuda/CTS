@@ -8,7 +8,7 @@ string path = Directory.GetCurrentDirectory();
 
 
 
-//
+//vyber elementu s ktorym budeme pracovat 
 var jobURLs = htmlJobs.DocumentNode.SelectNodes("//*[@id=\"snippet--content\"]/div/section/div/div/div/div/a");
 
 foreach (var jobURL in jobURLs)
@@ -36,9 +36,9 @@ foreach (var jobURL in jobURLs)
    
 
 
-    //string name = jobName + ".txt";
+    string name = jobName + ".txt";
     
-   // File.WriteAllText(path + name, jobDes);
+   File.WriteAllText(path + name, jobDes);
 
 }
 
