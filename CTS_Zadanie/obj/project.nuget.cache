@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "X6IZNHEEbnw+QYviEmKVNBTWLK1lX5TM52KMJBJTIsT4+g0ZK8v3hh+WclMNn7rIfFlSQqKj/72/w4nTAkbeOQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\labud\\source\\repos\\CTS_Zadanie\\CTS_Zadanie\\CTS_Zadanie.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\labud\\.nuget\\packages\\htmlagilitypack\\1.11.46\\htmlagilitypack.1.11.46.nupkg.sha512"
+  ],
+  "logs": []
+}

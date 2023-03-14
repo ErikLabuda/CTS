@@ -1,0 +1,17 @@
+C:\Users\labud\source\repos\CTS_Zadanie\CTS_Zadanie\bin\Debug\net6.0\CTS_Zadanie.exe
+C:\Users\labud\source\repos\CTS_Zadanie\CTS_Zadanie\bin\Debug\net6.0\CTS_Zadanie.deps.json
+C:\Users\labud\source\repos\CTS_Zadanie\CTS_Zadanie\bin\Debug\net6.0\CTS_Zadanie.runtimeconfig.json
+C:\Users\labud\source\repos\CTS_Zadanie\CTS_Zadanie\bin\Debug\net6.0\CTS_Zadanie.dll
+C:\Users\labud\source\repos\CTS_Zadanie\CTS_Zadanie\bin\Debug\net6.0\CTS_Zadanie.pdb
+C:\Users\labud\source\repos\CTS_Zadanie\CTS_Zadanie\bin\Debug\net6.0\HtmlAgilityPack.dll
+C:\Users\labud\source\repos\CTS_Zadanie\CTS_Zadanie\obj\Debug\net6.0\CTS_Zadanie.csproj.AssemblyReference.cache
+C:\Users\labud\source\repos\CTS_Zadanie\CTS_Zadanie\obj\Debug\net6.0\CTS_Zadanie.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\labud\source\repos\CTS_Zadanie\CTS_Zadanie\obj\Debug\net6.0\CTS_Zadanie.AssemblyInfoInputs.cache
+C:\Users\labud\source\repos\CTS_Zadanie\CTS_Zadanie\obj\Debug\net6.0\CTS_Zadanie.AssemblyInfo.cs
+C:\Users\labud\source\repos\CTS_Zadanie\CTS_Zadanie\obj\Debug\net6.0\CTS_Zadanie.csproj.CoreCompileInputs.cache
+C:\Users\labud\source\repos\CTS_Zadanie\CTS_Zadanie\obj\Debug\net6.0\CTS_Zadanie.csproj.CopyComplete
+C:\Users\labud\source\repos\CTS_Zadanie\CTS_Zadanie\obj\Debug\net6.0\CTS_Zadanie.dll
+C:\Users\labud\source\repos\CTS_Zadanie\CTS_Zadanie\obj\Debug\net6.0\refint\CTS_Zadanie.dll
+C:\Users\labud\source\repos\CTS_Zadanie\CTS_Zadanie\obj\Debug\net6.0\CTS_Zadanie.pdb
+C:\Users\labud\source\repos\CTS_Zadanie\CTS_Zadanie\obj\Debug\net6.0\CTS_Zadanie.genruntimeconfig.cache
+C:\Users\labud\source\repos\CTS_Zadanie\CTS_Zadanie\obj\Debug\net6.0\ref\CTS_Zadanie.dll
