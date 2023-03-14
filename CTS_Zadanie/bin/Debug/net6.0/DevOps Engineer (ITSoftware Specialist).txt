@@ -1,0 +1,1 @@
+Budeš automatizovat interní vývojové procesy od buildu komponent, přes jejich testy až po dodávku a nasazení u klienta. Využívat při tom budeš jak standardní nástroje TeamCity, Git nebo TFS, tak i naší interní sadu nástrojů vytvořenou dle našich potřeb.

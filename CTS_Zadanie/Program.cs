@@ -12,9 +12,9 @@ string path = Directory.GetCurrentDirectory();
 var jobURLs = htmlJobs.DocumentNode.SelectNodes("//*[@id=\"snippet--content\"]/div/section/div/div/div/div/a");
 
 foreach (var jobURL in jobURLs)
-{   
+{
     //pridaj k url hodnotu atributu "a" a vytvor tak novu url
-    var jobUrl = "https://www.cts-tradeit.cz" + jobURL.GetAttributeValue("href", "");  
+    var jobUrl = "https://www.cts-tradeit.cz" + jobURL.GetAttributeValue("href", "");
     //parsuj html z novej url
     HtmlDocument jobHome = await webHome.LoadFromWebAsync(jobUrl);
 
@@ -34,13 +34,16 @@ foreach (var jobURL in jobURLs)
     Console.WriteLine();
     Console.WriteLine();
 
-    
+
 
     string name = jobName + ".txt";
-    
-    await File.WriteAllTextAsync(name, jobDes);
 
+    Console.WriteLine(name.Replace(@"\", "").Replace("/", ""));
+
+    await File.WriteAllTextAsync(name.Replace(@"\", "").Replace("/", ""), jobDes);
 }
+
+
 
 
 
