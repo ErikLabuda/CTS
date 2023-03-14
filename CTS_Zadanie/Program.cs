@@ -33,12 +33,12 @@ foreach (var jobURL in jobURLs)
     Console.WriteLine(jobUrl);
     Console.WriteLine();
     Console.WriteLine();
-   
 
+    
 
     string name = jobName + ".txt";
     
-   File.WriteAllText(path + name, jobDes);
+    await File.WriteAllTextAsync(name, jobDes);
 
 }
 
