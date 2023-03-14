@@ -4,46 +4,50 @@
 var html1 = "https://www.cts-tradeit.cz/kariera/";
 HtmlWeb webHome = new HtmlWeb();
 HtmlDocument htmlJobs = await webHome.LoadFromWebAsync(html1);
+string path = Directory.GetCurrentDirectory();
 
 
 
-var avJobs = htmlJobs.DocumentNode.SelectNodes("//*[@id=\"snippet--content\"]/div/section/div/div/div/div/a/div/h3");
+//
+var jobURLs = htmlJobs.DocumentNode.SelectNodes("//*[@id=\"snippet--content\"]/div/section/div/div/div/div/a");
 
-
-
-
-
-
-
-foreach (var avJob in avJobs)
-{
-
-    //zisti nazov pozicie 
-   var jobName = avJob.InnerText.Trim();
-    Console.WriteLine(jobName);
-
-    //zisti url konkretnej pozicie (funguje len pri prvej pozicii - .NET Developer, neviem prist na chybu
-   var jobUrl = "https://www.cts-tradeit.cz" + avJob.SelectSingleNode("//*[@id=\"snippet--content\"]/div/section/div/div/div/div/a").GetAttributeValue("href", "");
-    //stiahne a parsuje html web
+foreach (var jobURL in jobURLs)
+{   
+    //pridaj k url hodnotu atributu "a" a vytvor tak novu url
+    var jobUrl = "https://www.cts-tradeit.cz" + jobURL.GetAttributeValue("href", "");  
+    //parsuj html z novej url
     HtmlDocument jobHome = await webHome.LoadFromWebAsync(jobUrl);
 
-    //vypise url pozicii, je to tu len pre tesotvanie ci funguje spravne 
-    Console.WriteLine(jobUrl);
+    //vyber text ktory sa nachadza v h1
+    //vyber text z div elementu, ktory ma nazov triedy 'story__text'
 
-    //zober text z casti "Co vas na teto pozici ceka
-    string jobDes = jobHome.DocumentNode.SelectSingleNode("//*[@id=\"snippet--content\"]/div/section[5]/div/div/div/div[2]/div[1]").InnerText.Trim();
+    string jobName = jobHome.DocumentNode.SelectSingleNode("//*[@id=\"snippet--content\"]/div/section/div/div/div/div/h1").InnerText.Trim();
+    string jobDes = jobHome.DocumentNode.SelectSingleNode("//div[contains(@class, 'story__text')]").InnerText.Trim();
 
+
+    //tu som len testoval funkcnost.
+    //ak by som chcel len vypisat v cmd vsetky potrebne udaje, program funguje, avsak pri zapisovani to textoveho suboru zapise len prve dve pozicie. 
+
+    Console.WriteLine(jobName);
     Console.WriteLine(jobDes);
+    Console.WriteLine(jobUrl);
+    Console.WriteLine();
+    Console.WriteLine();
+   
 
 
-    //zapis do textoveho suboru
-
-    string name = jobName + ".txt";
-    File.WriteAllText(name, jobDes);
-
-
+    //string name = jobName + ".txt";
+    
+   // File.WriteAllText(path + name, jobDes);
 
 }
+
+
+
+
+
+
+
 
 
 
